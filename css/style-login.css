@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+.box>*{
+    padding: 1em;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+
+}
+body, html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #343633;
+}
+
+.db-connect{
+    text-align:end;
+    color: #78BC61;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;   
+    padding-right: 1em;
+}
+.db-error{
+    text-align:end;
+    color: #E9806E;
+    text-shadow: black 0px 2px 2px;   
+    padding-right: 1em;
+}
+
+.form-title{
+    color: #7d70ba;
+    text-align: center;
+}
+
+.box{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: center;    
+}
+
+.box form{
+    display: grid;
+}
+
+.box form button, .box form input{
+    display: block;
+    width: 100%;
+    padding: 14px 10px;
+    margin: 20px auto;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #7d70ba;
+    outline: none;
+    color: white;
+
+}
+
+.box h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 10px;
+    color: #E9806E;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;   
+}
+
+.box form button{
+    background: #7d70ba;
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+    width: 100%;
+}
+
+.box form button:hover{
+    cursor:pointer;
+    background: #695AAF;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+/*.box form button:visited{
+    background: red;
+}*/
+
+.error-login{
+    width: 500px;
+    margin: 0 auto;
+    background: #E9806E;
+    display: block;
+    float:left;
+}
+
+.error-login h1{
+    font-size: 10px;
+}

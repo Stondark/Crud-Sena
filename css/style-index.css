@@ -1,0 +1,139 @@
+/* NAV IMPORT */
+
+.title {
+  font-size: 35px;
+  color: #5cc8ff;
+  text-align: center;
+}
+
+.btn-user {
+    display: inline-block;
+    background: #695aaf;
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+    margin: 20px;
+        width: 170px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-user:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background: #5cc8ff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+table {
+  border-collapse: collapse;
+  font-size: 12px;
+  width: 100%;
+}
+
+table th {
+  text-align: left;
+  padding: 10px;
+  background: #695aaf;
+  color: white;
+}
+
+table td{
+  padding: 10px;
+  color: white;
+}
+
+.link_delete{
+  color: #ff6b6b;
+  text-decoration: none;
+}
+.link_delete:hover{
+  color: #FF3333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link_edit{
+  color: #FCF888;
+  text-decoration: none;
+
+}
+.link_edit:hover{
+  color: #FAF33E;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* REGISTER USER */
+
+
+.content{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.box >*{
+  padding: 1em;
+}
+
+.form-title{
+  text-align: center;
+  color: #5cc8ff;
+  text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ejercicio1 form {
+  display:block;
+}
+.ejercicio1 form button, .ejercicio1 form input, .ejercicio1 form select{
+  width: 100%;
+  padding: 1em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #695aaf;
+  outline: none;
+  color: #dec1ff;
+
+}
+
+.ejercicio1 form input::placeholder{
+  color: #fff;
+}
+
+.ejercicio1 form input:focus{
+  box-shadow:10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ejercicio1 form button{
+  background: #695aaf;
+  border: none;
+  text-transform: uppercase;
+  padding: 1em;
+  width: 102%;
+  color: white;
+}
+
+.ejercicio1 label{
+  color: #5cc8ff;
+}
+
+.ejercicio1 form button:hover, .ejercicio1 form button:focus{
+  background: #5cc8ff;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+  
+}
+
+select{
+  cursor: pointer;
+  color: white;
+  background: #343633;
+}
+
+/* Select edit user */
+.edit-user-select option:first-child{
+  display: none;
+}
