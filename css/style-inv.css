@@ -59,3 +59,20 @@
     color: #C3423F;
 
 }
+
+.form-browser{
+  display: flex;
+  float: right;
+  background: initial;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-browser, .btn-buscar{
+  background: red;
+  color: yellow;
+  padding: 0 px;
+  border: 0;
+  cursor: pointer;
+  margin-left: 10px;
+}

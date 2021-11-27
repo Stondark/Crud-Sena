@@ -33,7 +33,6 @@
             </div>
         </div>
     </div>
-    <form class="form-box" action="../controller/new-user.php" method="post">
 
 </body>
 

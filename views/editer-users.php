@@ -80,6 +80,7 @@ if (isset($_POST['update'])) {
 
 
 <body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <?php include "../views/nav.php"; ?>
     <div class="content">
         <h1 class="form-title">Editar usuario</h1>

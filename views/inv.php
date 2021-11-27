@@ -11,11 +11,21 @@
 </head>
 
 <body>
-<?php include "../views/nav.php"; ?>
-<div class="user-div">
+    <?php include "../views/nav.php"; ?>
+
+
+
+
+
+
+    <div class="user-div">
 
         <h1 class="title">Producto</h1>
-        <a href="../views/register-user.php" class="btn-user"><i class="fas fa-cart-plus"></i> Nuevo Producto</a>
+        <a href="../views/register-inv.php" class="btn-user"><i class="fas fa-cart-plus"></i> Nuevo Producto</a>
+        <form action="../controller/browser.php" method="get" class="form_browser">
+            <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
+            <input type="submit" value="Buscar" class="btn-buscar">
+        </form>
         <table>
             <tr>
                 <th>ID</th>
@@ -48,8 +58,8 @@
                         <td><?php echo $data['precio_venta'] ?></td>
                         <td><?php echo $data['precio_pormayor'] ?></td>
                         <td>
-                            <a href="../views/editer-users.php?id=<?php echo $data['id'];?>"><i class="fas fa-edit fa-lg"></i></a>
-                            <a href="../controller/delete.php?id=<?php echo $data['id'];?>"><i class="fas fa-trash-alt fa-lg"></i></a>
+                            <a href="../views/edit-inv.php?id=<?php echo $data['id']; ?>"><i class="fas fa-edit fa-lg"></i></a>
+                            <a href="../controller/delete-inv.php?id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt fa-lg"></i></a>
                         </td>
                     </tr>
 
