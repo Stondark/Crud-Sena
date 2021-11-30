@@ -22,10 +22,12 @@ body{
 }
 .menu-nav a:hover{
     display: inline-block;
-    color: #4ECDC4;
+    color: #5cc8ff;
     padding: 10px 30px;
     text-decoration: none;
+    transition: 0.5s;
 }
+
 
 .fa-user-edit{
     color: #FEF086;

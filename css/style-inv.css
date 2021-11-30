@@ -1,78 +1,96 @@
 .title {
-    font-size: 35px;
-    color: #5cc8ff;
-    text-align: center;
-  }
-  
-  .btn-user {
-      display: inline-block;
-      background: #695aaf;
-      border: none;
-      text-transform: uppercase;
-      padding: 1em;
-      margin: 20px;
-          width: 190px;
-      text-decoration: none;
-      color: white;
-      border-radius: 20px;
-  }
-  
-  .btn-user:hover {
-      transition: 0.5s;
-      cursor: pointer;
-      background: #5cc8ff;
-      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-      }
-  
-  table {
-    border-collapse: collapse;
-    font-size: 12px;
-    width: 100%;
-  }
-  
-  table th {
-    text-align: left;
-    padding: 10px;
-    background: #695aaf;
-    color: white;
-  }
-  
-  table td{
-    padding: 10px;
-    color: white;
-  }
-  
-.fa-edit{
-    color: #FEF086;
-    width:2em;
+  font-size: 35px;
+  color: #5cc8ff;
+  text-align: center;
 }
 
-.fa-edit:hover{
-    color: #FDE10D;
+.btn-user {
+  display: inline-block;
+  background: #695aaf;
+  border: none;
+  text-transform: uppercase;
+  padding: 1em;
+  margin: 20px;
+  width: 190px;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
 }
 
-.fa-trash-alt{
-    color: #CE6664;
-}
-
-.fa-trash-alt:hover{
-    color: #C3423F;
-
-}
-
-.form-browser{
-  display: flex;
-  float: right;
-  background: initial;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.form-browser, .btn-buscar{
-  background: red;
-  color: yellow;
-  padding: 0 px;
-  border: 0;
+.btn-user:hover {
+  transition: 0.5s;
   cursor: pointer;
-  margin-left: 10px;
+  background: #5cc8ff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 12px;
+  width: 100%;
+}
+
+table th {
+  text-align: left;
+  padding: 10px;
+  background: #695aaf;
+  color: white;
+}
+
+table td {
+  padding: 10px;
+  color: white;
+}
+
+.fa-edit {
+  color: #fef086;
+  width: 2em;
+}
+
+.fa-edit:hover {
+  color: #fde10d;
+}
+
+.fa-trash-alt {
+  color: #ce6664;
+}
+
+.fa-trash-alt:hover {
+  color: #c3423f;
+}
+
+.browser {
+  text-align: right;
+  padding-bottom: 1em;
+  padding-right: 1em;
+}
+
+.input-browser {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #695aaf;
+  outline: none;
+  color: white;
+}
+
+.btn-buscar{
+  background: #695aaf;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  color: white;
+  width: 10%;
+  
+}
+
+.btn-buscar:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background: #5cc8ff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.agotado{
+  font-weight: bold;
+  color: #ce6664;
 }

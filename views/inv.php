@@ -11,20 +11,18 @@
 </head>
 
 <body>
-    <?php include "../views/nav.php"; ?>
-
-
-
-
-
+    <?php include "../views/nav.php";
+    ?>
 
     <div class="user-div">
 
-        <h1 class="title">Producto</h1>
+        <h1 class="title">Productos</h1>
         <a href="../views/register-inv.php" class="btn-user"><i class="fas fa-cart-plus"></i> Nuevo Producto</a>
-        <form action="../controller/browser.php" method="get" class="form_browser">
-            <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
-            <input type="submit" value="Buscar" class="btn-buscar">
+        <div class="browser">
+            <form action="../controller/browser.php" method="post" class="form_browser">
+                <input type="text" name="busqueda" id="busqueda" placeholder="Buscar" class="input-browser">
+                <input type="submit" value="Buscar" class="btn-buscar">
+        </div>
         </form>
         <table>
             <tr>
@@ -53,7 +51,15 @@
                     <tr>
                         <td><?php echo $data['id'] ?></td>
                         <td><?php echo $data['producto'] ?></td>
-                        <td><?php echo $data['cantidad'] ?></td>
+                        <?php 
+                        if ($data['producto' != 0]) {
+                            ?>
+                            <td><?php echo $data['cantidad']; ?></td>
+                        <?php
+                        } else{
+                            echo "<td class ='agotado'>Agotado</td>";
+                        }
+                        ?>
                         <td><?php echo $data['precio_compra'] ?></td>
                         <td><?php echo $data['precio_venta'] ?></td>
                         <td><?php echo $data['precio_pormayor'] ?></td>
