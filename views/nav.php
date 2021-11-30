@@ -1,9 +1,3 @@
-<?php
-session_start();
-$usuario = $_SESSION['user'];
-
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
