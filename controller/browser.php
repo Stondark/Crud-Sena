@@ -85,7 +85,7 @@
                     });
                 </script>
             <?php
-                header("Refresh:1; url=../views/inv.php", true, 303);
+                header("Refresh:1; url=../views/inv.php");
             }
 
             ?>

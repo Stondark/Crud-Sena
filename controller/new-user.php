@@ -46,7 +46,7 @@ if (isset($_POST['submit-btn'])) {
                 title: 'Registrado con éxito', 
                 allowEnterKey: true})</script>
             <?php
-            header("Refresh:1; url=../views/users.php", true, 303);
+            header("Refresh:1; url=../views/users.php");
         } else {
             ?>
             <script>Swal.fire({

@@ -44,12 +44,13 @@ if (isset($_POST['submit-btn'])) {
                                                 VALUES ($cantidad, $precio_compra,$precio_venta, $precio_pormayor, '$producto')");
         if ($query_insert) {
             ?>
+            
             <script>Swal.fire({
                 icon: 'success', 
                 title: 'Producto registrado con éxito', 
                 allowEnterKey: true})</script>
             <?php
-            header("Refresh:1; url=../views/inv.php", true, 303);
+            header("Refresh:1; url=../views/inv.php");
         } else {
             ?>
             <script>Swal.fire({

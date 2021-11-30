@@ -61,7 +61,7 @@ if (isset($_POST['update'])) {
         });
     </script>
 <?php
-    header("Refresh:1; url=../views/users.php", true, 303);
+    header("Refresh:1; url=../views/users.php");
 }
 
 ?>
