@@ -104,3 +104,12 @@ table td {
   font-weight: bold;
   color: #fde10d;
 }
+
+.fa-eye{
+  width: 2em;
+  color: white;
+}
+
+.fa-eye:hover{
+  color: lightgray;
+}

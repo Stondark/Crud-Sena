@@ -94,6 +94,7 @@
                         ?>
                         <td><?php echo $data['total'] ?></td>
                         <td>
+                            <a href="../views/view-venta.php?id=<?php echo $data['id']?>"><i class="fas fa-eye fa-lg"></i></a>
                             <a href="../views/edit-venta.php?id=<?php echo $data['id']; ?>"><i class="fas fa-edit fa-lg"></i></a>
                             <a href="../controller/delete-venta.php?id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt fa-lg"></i></a>
                         </td>

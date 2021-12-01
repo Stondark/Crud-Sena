@@ -48,3 +48,53 @@ body{
 
 }
 
+/* ----------- CSS view-venta.php ---------------- */
+
+.box{
+    padding: 1em;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: center;    
+    text-align: center;
+}
+
+.box h1{
+    text-align: center;
+    color: #5cc8ff;
+}
+
+.box-inter{
+    border-radius: 20px;
+    border: 1px solid #7D70BA;
+}
+
+.box-inter p{
+    color: white;
+}
+.box-inter span{
+    font-weight: bold;
+}
+
+.button-back{
+    text-align: center;
+    background: #7D70BA;
+    color: white;
+    border-radius: 20px;
+    height: 100px;
+    text-decoration: none;
+    padding: 1em;
+    border: none;
+}
+
+.button-back:hover{
+    text-align: center;
+    background: #5cc8ff;
+    color: white;
+    border-radius: 20px;
+    height: 100px;
+    text-decoration: none;
+    padding: 1em;
+    border: none;
+    transition: 1s;
+}
