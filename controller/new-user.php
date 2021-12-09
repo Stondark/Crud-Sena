@@ -20,6 +20,7 @@ if (isset($_POST['submit-btn'])) {
     $user = $_POST['user'];
     $contraseña = $_POST['contraseña'];
     $rol = $_POST['rol'];
+    $pass_encriptada = password_hash($contraseña, PASSWORD_DEFAULT);
 
     $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE nombre = '$name' OR usuario = '$user'");
     $result = mysqli_fetch_array($query);
@@ -38,7 +39,7 @@ if (isset($_POST['submit-btn'])) {
         <?php
     } else {
 
-        $query_insert = mysqli_query($conexion, "INSERT INTO usuarios(nombre, usuario, contraseña, id_cargo) VALUES ('$name', '$user', '$contraseña', '$rol')");
+        $query_insert = mysqli_query($conexion, "INSERT INTO usuarios(nombre, usuario, contraseña, id_cargo) VALUES ('$name', '$user', '$pass_encriptada', '$rol')");
         if ($query_insert) {
             ?>
             <script>Swal.fire({

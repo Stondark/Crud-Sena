@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
             })
         </script>
     <?php
-        header("Location: ../views/index.php");
+        header("Refresh:1; url=../views/users.php");
     } else {
     ?>
         <script>

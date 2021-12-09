@@ -48,8 +48,9 @@ if (isset($_POST['update'])) {
     $contraseña = $_POST['contraseña'];
     $nombre = $_POST['name'];
     $id_cargo = $_POST['rol'];
+    $pass_encriptada = password_hash($contraseña, PASSWORD_DEFAULT);
     $query = "UPDATE usuarios 
-        SET nombre = '$nombre', usuario = '$usuario', contraseña = '$contraseña', id_cargo = $id_cargo
+        SET nombre = '$nombre', usuario = '$usuario', contraseña = '$pass_encriptada', id_cargo = $id_cargo
         WHERE id = $iduser";
     mysqli_query($conexion, $query);
 ?>

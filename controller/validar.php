@@ -19,6 +19,8 @@
 $usuario = $_POST['user'];
 $contraseña = $_POST['password'];
 
+//$pass_encriptada = password_hash($contraseña, PASSWORD_DEFAULT);
+
 
 session_start();
 $_SESSION['user'] = $usuario;
@@ -27,12 +29,13 @@ include('../controller/db.php');
 
 //$conexion = mysqli_connect("localhost", "root", "12345", "rol");
 
-$consulta = "SELECT*FROM usuarios where nombre = '$usuario' and contraseña = '$contraseña'";
+$consulta = "SELECT*FROM usuarios where nombre = '$usuario'";
 $resultado = mysqli_query($conexion, $consulta);
 
 $filas = mysqli_num_rows($resultado);
+$desencriptar_contraseña = mysqli_fetch_array($resultado);
 
-if ($filas) {
+if (($filas == 1) && (password_verify($contraseña, $desencriptar_contraseña['contraseña']))) {
 
 ?>
     <script>
@@ -44,17 +47,23 @@ if ($filas) {
         })
     </script>
 <?php
-    header("Refresh:1; url=../views/index.php", true, 303);
+    header("Refresh:1; url=../views/index.php");
 } else {
 ?>
     <?php
     $filas = true;
     ?>
-    <div class="box">
-        <h2>Las credenciales están incorrectas</h2>
-    </div>
-<?php
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Inicio de sesión incorrecto',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    </script>
 
+<?php
+    header("Refresh:1; url=../views/login.php");
 }
 
 mysqli_free_result($resultado);
