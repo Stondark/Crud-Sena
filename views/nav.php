@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-nav.css">
     <link rel="icon" type="image/png" href="../logo.png">
-    <script src="https://kit.fontawesome.com/f003d76e19.js" crossorigin="anonymous"></script>
+    <title>Nav</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
